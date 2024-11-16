@@ -1,0 +1,584 @@
+:root {
+    --beigeMain: #ece6e1;
+    --inputBgColor: #f2ece7;
+    --inputPlaceholder: #727272;
+    --button: #a09283;
+    --inputText: #6E6E6E;
+    --color-invalid: red;
+}
+
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-size: 16px;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    font-family: "Poppins", sans-serif;
+    accent-color: var(--button);
+}
+
+
+
+
+/*header hero-banner*/
+header {
+    grid-column: 1 / 2;
+    width: 100%;
+    height: 30vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+header video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(75%);
+    z-index: 0;
+}
+
+
+
+
+.hero {
+    width: 100%;
+}
+
+
+
+
+.hero-text {
+    position: absolute;
+    width: 100%;
+    /*background-color: green;*/
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+.hero-text img {
+    width: 15%;
+    max-width: 65px;
+    filter: drop-shadow(0 0 10px rgb(80, 80, 80));
+    z-index: 2;
+    padding-bottom: 0;
+    flex-grow: 1;
+}
+
+
+
+
+.hero-text h1 {
+    /*color: rgb(58, 57, 57);*/
+    /*background-color: rgb(250, 204, 211);*/
+    color: white;
+    width: 100%;
+    display: block;
+    font-size: 1.4em;
+    padding: 0;
+    margin: 0 auto 0 auto;
+    flex-shrink: 1;
+    z-index: 2;
+
+}
+
+
+.hero-text h2 {
+    color: white;
+    width: 100%;
+    display: block;
+    font-size: 0.9em;
+    flex-shrink: 1;
+    margin: 0;
+    padding-top: 3px;
+    z-index: 2;
+}
+
+
+/*Content*/
+main {
+    grid-column: 1 / 2;
+    width: 100%;
+    padding: 0 30px;
+    background-color: var(--beigeMain);
+}
+
+
+.all {
+    padding: 0;
+    margin: 0;
+}
+
+
+.formContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    padding: 0 0 30px 0;
+}
+
+
+h2 {
+    font-size: 1.3em;
+    margin-bottom: 15px;
+    padding-left: 10px;
+}
+
+
+fieldset {
+    width: 100%;
+    max-width: 350px;
+    border: none;
+    margin: 0;
+    filter: drop-shadow(2px 2px 3px rgba(137, 137, 137, 0.5));
+    background-color: white;
+    border-radius: 30px;
+}
+
+
+form {
+    width: 100%;
+    padding: 10px 20px;
+    align-items: center;
+}
+
+
+.personalInfo {
+    margin: 0;
+    padding: 0 20px;
+    width: 100%;
+}
+
+
+span {
+    width: 28%;
+    flex-shrink: 1;
+    font-size: 0.8em;
+    display: none;
+    color: black;
+    text-align: right;
+}
+
+
+input {
+    width: 100%;
+    flex-shrink: 1;
+    display: block;
+    border-radius: 30px;
+    background-color: var(--inputBgColor);
+    padding: 5px 10px;
+    margin: 10px 0;
+    color: var(--inputText);
+    border: none;
+    outline: none;
+    align-content: center;
+}
+
+.large {
+    display: none;
+}
+
+input:focus {
+    border: 2px solid var(--button);
+    outline: var(--button);
+}
+
+input:required:invalid:not(:focus):not(:placeholder-shown) {
+    border: 2px solid var(--color-invalid);
+}
+
+input:required:invalid:not(:focus):not(:placeholder-shown)~.error {
+    display: flex;
+}
+
+.error {
+    display: hidden;
+    padding-left: 50px;
+    text-wrap: none;
+    width: 100%;
+    font-size: 0.5em;
+    color: var(--color-invalid);
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: left;
+}
+
+.error ul {
+    padding-bottom: 5px;
+    margin: 0;
+}
+
+.error li {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    justify-content: flex-end;
+}
+
+
+input::placeholder {
+    text-transform: uppercase;
+    color: var(--inputPlaceholder);
+    opacity: 0.8;
+    font-size: 0.8em;
+    align-content: center;
+    padding-left: 10px;
+}
+
+
+::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    text-transform: uppercase;
+    color: var(--inputPlaceholder);
+    opacity: 0.8;
+    font-size: 0.6em;
+    align-content: center;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    text-transform: uppercase;
+    color: var(--inputPlaceholder);
+    opacity: 0.8;
+    font-size: 0.6em;
+    align-content: center;
+}
+
+:-ms-input-placeholder {
+    /* IE 10+ */
+    text-transform: uppercase;
+    color: var(--inputPlaceholder);
+    opacity: 0.8;
+    font-size: 0.6em;
+    align-content: center;
+}
+
+:-moz-placeholder {
+    /* Firefox 18- */
+    text-transform: uppercase;
+    color: var(--inputPlaceholder);
+    opacity: 0.8;
+    font-size: 0.6em;
+    align-content: center;
+}
+
+
+/*Radio buttons*/
+.radio-choice {
+    font-size: 0.6em;
+    width: 100%;
+    margin-bottom: 1px;
+}
+
+
+.radio-choice p {
+    padding: 20px 0 5px 0;
+}
+
+
+label[name="level"] {
+    width: 20%;
+    height: 100%;
+}
+
+
+input[type="radio"] {
+    width: 5%;
+    max-width: 15px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: white;
+    border: 1px solid black;
+}
+
+
+input[type="radio"]:focus {
+    background-color: var(--button);
+}
+
+
+input[type="radio"]:hover,
+input[type="checkbox"]:hover {
+    cursor: pointer;
+}
+
+
+.required {
+    margin: 0;
+    padding: 0;
+    display: block;
+
+}
+
+.required p {
+    font-size: 0.6em;
+    padding: 0;
+    margin-bottom: 5px;
+    margin-top: 0;
+    display: block;
+    width: 100%;
+}
+
+/*Terms and Conditions*/
+.terms {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+label[name="termsName"] a {
+    font-size: 0.7em;
+    color: black;
+    text-decoration: none;
+}
+
+
+label[name="termsName"] a:hover {
+    font-size: 0.7em;
+    color: black;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+input[type="checkbox"] {
+    display: inline-block;
+    vertical-align: middle;
+    width: 15px;
+}
+
+/*submit button and login*/
+button {
+    border-radius: 30px;
+    border: none;
+    background-color: var(--button);
+    color: white;
+    padding: 7px 13px;
+    font-size: 0.7em;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+
+.login {
+    font-size: 0.5em;
+}
+
+
+.login a {
+    color: var(--button);
+    font-weight: bold;
+}
+
+
+
+
+@media screen and (min-width: 628px) and (max-width: 1023px) {
+
+
+    .hero-text {
+        top: 45%;
+    }
+
+
+    .hero-text h1 {
+        font-size: 2.5em;
+        line-height: 1.2;
+    }
+
+
+    .hero-text h2 {
+        font-size: 1em;
+    }
+
+
+    header {
+        height: 60vh;
+    }
+
+
+    fieldset {
+        max-width: 800px;
+        grid-template-columns: repeat(2, 2fr);
+    }
+
+
+    .all {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .personalInfo {
+        width: 100%;
+        grid-column: 1 / 2;
+        padding: 10px 20px;
+    }
+
+    .radio-choice {
+        grid-column: 2 / 3;
+        padding: 10px 20px;
+    }
+
+
+    .radio-choice p {
+        margin: 10px 0 0 0;
+        padding: 0;
+    }
+
+    .required {
+        padding-left: 20px;
+    }
+
+
+    .terms {
+        grid-column: 1 / 3;
+        padding: 10px 20px 10px 20px;
+    }
+
+
+    .submit {
+        grid-column: 1 / 3;
+        padding: 0 20px;
+    }
+
+}
+
+
+@media screen and (min-width: 1024px) {
+
+
+    .hero-text {
+        top: 38%;
+    }
+
+
+    .hero-text h1 {
+        font-size: 3em;
+        line-height: 1.2;
+    }
+
+
+    .hero-text h2 {
+        font-size: 1em;
+    }
+
+
+    header {
+        height: 60vh;
+        aspect-ratio: 16 / 9;
+    }
+
+
+    fieldset {
+        max-width: 800px;
+        grid-template-columns: repeat(2, 2fr);
+    }
+
+
+    .all {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .personalInfo {
+        width: 100%;
+        grid-column: 1 / 2;
+        padding: 10px 20px;
+    }
+
+    .small {
+        display: none;
+    }
+
+    .large {
+        display: inline-block;
+    }
+
+    input {
+        width: 70%;
+        display: inline-block;
+    }
+
+
+    label {
+        width: 70%;
+    }
+
+
+    span {
+        display: inline-block;
+
+    }
+
+
+    /*radio buttons*/
+    .radio-choice {
+        grid-column: 2 / 3;
+        padding: 10px 20px;
+    }
+
+
+    .radio-choice p {
+        margin: 10px 0 20px 0;
+        padding: 0;
+        font-size: 1.2em;
+    }
+
+    .required {
+        padding-left: 20px;
+    }
+
+    .required p {
+        margin: 0;
+    }
+
+
+    .terms {
+        grid-column: 1 / 3;
+        padding: 10px 20px 10px 20px;
+    }
+
+    .submit p {
+        font-size: 0.6em;
+    }
+
+
+    .submit {
+        grid-column: 1 / 3;
+        padding: 0 20px;
+    }
+
+}

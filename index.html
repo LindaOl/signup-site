@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <title>Signup</title>
+
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins&display=swap"
+        rel="stylesheet">
+</head>
+
+
+
+
+<body>
+
+
+
+
+    <header>
+        <div class="hero">
+            <video src="assets/yoga-vid.mp4" autoplay muted loop></video>
+
+            <div class="hero-text">
+                <img src="assets/logo-white.png" alt="Yoga logo" />
+                <h1>
+                    Body, mind and spirit
+                </h1>
+                <h2>
+                    Start your journey
+                </h2>
+            </div>
+        </div>
+    </header>
+
+
+
+
+    <main>
+        <div class="formContent">
+            <h2>Sign up and join the community</h2>
+
+            <fieldset>
+                <form action="http://httpbin.org/anything" method="POST">
+                    <div class="all">
+                        <div class="personalInfo">
+                            <label class="mainLabels">
+                                <span>First Name*</span>
+                                <input type="text" name="info" class="large" required placeholder="First Name" />
+                                <input type="text" name="info" class="small" required placeholder="First Name*" />
+                                <span class="error">Invalid input</span>
+                            </label>
+
+                            <label class="mainLabels">
+                                <span>Last Name*</span>
+                                <input type="text" name="info" class="large" required placeholder="Last Name" />
+                                <input type="text" name="info" class="small" required placeholder="Last Name*" />
+                                <span class="error">Invalid input</span>
+                            </label>
+
+                            <label class="mainLabels">
+                                <span>Username*</span>
+                                <input type="text" name="info" minlength="3" class="large" required
+                                    placeholder="Username" />
+                                <input type="text" name="info" minlength="3" class="small" required
+                                    placeholder="Username*" />
+                                <span class="error">Invalid input. Minimum of 3 character.</span>
+                            </label>
+
+                            <label class="mainLabels">
+                                <span>Password*</span>
+                                <input type="password" name="info" class="large"
+                                    pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}$" required
+                                    placeholder="Password" minlength="8" autocomplete="new-password" />
+                                <input type="password" name="info" class="small"
+                                    pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}$" required
+                                    placeholder="Password*" minlength="8" autocomplete="new-password" />
+                                <span class="error">
+                                    <ul>Your password needs:
+                                        <li>At least 8 characters long</li>
+                                        <li>Include both lower and upper case</li>
+                                        <li>Include at least one number</li>
+                                    </ul>
+                                </span>
+                            </label>
+
+                            <label class="mainLabels">
+                                <span>E-mail*</span>
+                                <input type="email" name="info" class="large" required
+                                    placeholder="email@example.com" />
+                                <input type="email" name="info" class="small" required
+                                    placeholder="email@example.com*" />
+                                <span class="error">Invalid input</span>
+                            </label>
+
+                            <label class="mainLabels">
+                                <span>Postal Code*</span>
+                                <input type="number" name="info" class="large" required placeholder="123 45" />
+                                <input type="number" name="info" class="small" required placeholder="123 45*" />
+                                <span class="error">Needs 5 numbers</span>
+                            </label>
+
+                            <label class="mainLabels">
+                                <span>City*</span>
+                                <input type="text" name="info" class="large" required placeholder="Stockholm" />
+                                <input type="text" name="info" class="small" required placeholder="Stockholm*" />
+                                <span class="error">Invalid input</span>
+                            </label>
+
+                            <label class="mainLabels">
+                                <span>Country*</span>
+                                <input type="text" name="info" class="large" required placeholder="Sverige" />
+                                <input type="text" name="info" class="small" required placeholder="Sverige*" />
+                                <span class="error">Invalid input</span>
+                            </label>
+
+                        </div>
+
+
+                        <!--Radio buttons - experience level-->
+
+                        <div class="radio-choice">
+                            <p>Your suggested content on signup will be chosen based on your previous experience.
+                            </p>
+
+                            <h3>Previous experience: *</h3>
+                            <div class="choice">
+                                <label name="level">
+                                    <input type="radio" name="experience" value="beginner" />
+                                    Beginner
+                                </label>
+                            </div>
+
+                            <div class="choice">
+                                <label name="level">
+                                    <input type="radio" name="experience" value="intermediate" />
+                                    Intermediate
+                                </label>
+                            </div>
+
+                            <div class="choice">
+                                <label name="level">
+                                    <input type="radio" name="experience" value="advanced" />
+                                    Advanced
+                                </label>
+                            </div>
+
+
+
+
+                        </div>
+
+                        <div class="required">
+                            <p>* Indicates required field</p>
+                        </div>
+                        <div class="terms">
+                            <label name="termsName">
+                                <input type="checkbox" name="agree" value="agree to terms" />
+                                <a href="#">
+                                    Terms and Conditions*
+                                </a>
+                            </label>
+                        </div>
+
+
+                        <div class="submit">
+                            <button type="submit">
+                                Sign up
+                            </button>
+                            <p class="login">Already have an account?
+                                <a href="#">Login
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </form>
+            </fieldset>
+        </div>
+
+
+    </main>
+
+
+
+
+</body>
+
+
+
+
+</html>

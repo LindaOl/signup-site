@@ -8,10 +8,14 @@
 }
 
 
+
+
 * {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
+
+
 
 
 body {
@@ -24,6 +28,10 @@ body {
     font-family: "Poppins", sans-serif;
     accent-color: var(--button);
 }
+
+
+
+
 
 
 
@@ -42,6 +50,10 @@ header {
 
 
 
+
+
+
+
 header video {
     width: 100%;
     height: 100%;
@@ -54,9 +66,17 @@ header video {
 
 
 
+
+
+
+
 .hero {
     width: 100%;
 }
+
+
+
+
 
 
 
@@ -77,6 +97,10 @@ header video {
 
 
 
+
+
+
+
 .hero-text img {
     width: 15%;
     max-width: 65px;
@@ -85,6 +109,10 @@ header video {
     padding-bottom: 0;
     flex-grow: 1;
 }
+
+
+
+
 
 
 
@@ -101,7 +129,10 @@ header video {
     flex-shrink: 1;
     z-index: 2;
 
+
 }
+
+
 
 
 .hero-text h2 {
@@ -116,6 +147,8 @@ header video {
 }
 
 
+
+
 /*Content*/
 main {
     grid-column: 1 / 2;
@@ -125,10 +158,14 @@ main {
 }
 
 
+
+
 .all {
     padding: 0;
     margin: 0;
 }
+
+
 
 
 .formContent {
@@ -143,11 +180,15 @@ main {
 }
 
 
+
+
 h2 {
     font-size: 1.3em;
     margin-bottom: 15px;
     padding-left: 10px;
 }
+
+
 
 
 fieldset {
@@ -161,6 +202,8 @@ fieldset {
 }
 
 
+
+
 form {
     width: 100%;
     padding: 10px 20px;
@@ -168,11 +211,15 @@ form {
 }
 
 
+
+
 .personalInfo {
     margin: 0;
     padding: 0 20px;
     width: 100%;
 }
+
+
 
 
 span {
@@ -183,6 +230,8 @@ span {
     color: black;
     text-align: right;
 }
+
+
 
 
 input {
@@ -199,22 +248,27 @@ input {
     align-content: center;
 }
 
+
 .large {
     display: none;
 }
+
 
 input:focus {
     border: 2px solid var(--button);
     outline: var(--button);
 }
 
+
 input:required:invalid:not(:focus):not(:placeholder-shown) {
     border: 2px solid var(--color-invalid);
 }
 
+
 input:required:invalid:not(:focus):not(:placeholder-shown)~.error {
     display: flex;
 }
+
 
 .error {
     display: none;
@@ -229,10 +283,12 @@ input:required:invalid:not(:focus):not(:placeholder-shown)~.error {
     text-align: left;
 }
 
+
 .error ul {
     padding-bottom: 5px;
     margin: 0;
 }
+
 
 .error li {
     margin: 0;
@@ -240,6 +296,8 @@ input:required:invalid:not(:focus):not(:placeholder-shown)~.error {
     text-align: left;
     justify-content: flex-end;
 }
+
+
 
 
 input::placeholder {
@@ -252,6 +310,8 @@ input::placeholder {
 }
 
 
+
+
 ::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
     text-transform: uppercase;
@@ -260,6 +320,7 @@ input::placeholder {
     font-size: 0.6em;
     align-content: center;
 }
+
 
 ::-moz-placeholder {
     /* Firefox 19+ */
@@ -270,6 +331,7 @@ input::placeholder {
     align-content: center;
 }
 
+
 :-ms-input-placeholder {
     /* IE 10+ */
     text-transform: uppercase;
@@ -278,6 +340,7 @@ input::placeholder {
     font-size: 0.6em;
     align-content: center;
 }
+
 
 :-moz-placeholder {
     /* Firefox 18- */
@@ -289,6 +352,8 @@ input::placeholder {
 }
 
 
+
+
 /*Radio buttons*/
 .radio-choice {
     font-size: 0.6em;
@@ -297,15 +362,21 @@ input::placeholder {
 }
 
 
+
+
 .radio-choice p {
     padding: 20px 0 5px 0;
 }
+
+
 
 
 label[name="level"] {
     width: 20%;
     height: 100%;
 }
+
+
 
 
 input[type="radio"] {
@@ -322,9 +393,13 @@ input[type="radio"] {
 }
 
 
+
+
 input[type="radio"]:focus {
     background-color: var(--button);
 }
+
+
 
 
 input[type="radio"]:hover,
@@ -333,12 +408,16 @@ input[type="checkbox"]:hover {
 }
 
 
+
+
 .required {
     margin: 0;
     padding: 0;
     display: block;
 
+
 }
+
 
 .required p {
     font-size: 0.6em;
@@ -349,6 +428,7 @@ input[type="checkbox"]:hover {
     width: 100%;
 }
 
+
 /*Terms and Conditions*/
 .terms {
     display: flex;
@@ -357,11 +437,15 @@ input[type="checkbox"]:hover {
 }
 
 
+
+
 label[name="termsName"] a {
     font-size: 0.7em;
     color: black;
     text-decoration: none;
 }
+
+
 
 
 label[name="termsName"] a:hover {
@@ -372,11 +456,14 @@ label[name="termsName"] a:hover {
 }
 
 
+
+
 input[type="checkbox"] {
     display: inline-block;
     vertical-align: middle;
     width: 15px;
 }
+
 
 /*submit button and login*/
 button {
@@ -391,9 +478,13 @@ button {
 }
 
 
+
+
 .login {
     font-size: 0.5em;
 }
+
+
 
 
 .login a {
@@ -404,12 +495,20 @@ button {
 
 
 
+
+
+
+
 @media screen and (min-width: 628px) and (max-width: 1023px) {
+
+
 
 
     .hero-text {
         top: 45%;
     }
+
+
 
 
     .hero-text h1 {
@@ -418,14 +517,20 @@ button {
     }
 
 
+
+
     .hero-text h2 {
         font-size: 1em;
     }
 
 
+
+
     header {
         height: 60vh;
     }
+
+
 
 
     fieldset {
@@ -434,10 +539,14 @@ button {
     }
 
 
+
+
     .all {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
+
+
 
 
     .personalInfo {
@@ -446,10 +555,13 @@ button {
         padding: 10px 20px;
     }
 
+
     .radio-choice {
         grid-column: 2 / 3;
         padding: 10px 20px;
     }
+
+
 
 
     .radio-choice p {
@@ -457,9 +569,12 @@ button {
         padding: 0;
     }
 
+
     .required {
         padding-left: 20px;
     }
+
+
 
 
     .terms {
@@ -468,20 +583,29 @@ button {
     }
 
 
+
+
     .submit {
         grid-column: 1 / 3;
         padding: 0 20px;
     }
 
+
 }
+
+
 
 
 @media screen and (min-width: 1024px) {
 
 
+
+
     .hero-text {
         top: 38%;
     }
+
+
 
 
     .hero-text h1 {
@@ -490,9 +614,13 @@ button {
     }
 
 
+
+
     .hero-text h2 {
         font-size: 1em;
     }
+
+
 
 
     header {
@@ -501,10 +629,14 @@ button {
     }
 
 
+
+
     fieldset {
         max-width: 800px;
         grid-template-columns: repeat(2, 2fr);
     }
+
+
 
 
     .all {
@@ -513,26 +645,24 @@ button {
     }
 
 
+
+
     .personalInfo {
         width: 100%;
         grid-column: 1 / 2;
         padding: 10px 20px;
     }
 
-    input[name="firstNameSmall"],
-    input[name="lastNamesmall"],
-    input[name="usernameSmall"],
-    input[name="pwSmall"],
-    input[name="mailSmall"],
-    input[name="postalSmall"],
-    input[name="citySmall"],
-    input[name="countrySmall"] {
+
+    .small {
         display: none;
     }
 
+
     .large {
-        display: block;
+        display: inline-block;
     }
+
 
     input {
         width: 70%;
@@ -540,15 +670,22 @@ button {
     }
 
 
+
+
     label {
         width: 70%;
     }
 
 
+
+
     span {
         display: inline-block;
 
+
     }
+
+
 
 
     /*radio buttons*/
@@ -558,19 +695,25 @@ button {
     }
 
 
+
+
     .radio-choice p {
         margin: 10px 0 20px 0;
         padding: 0;
         font-size: 1.2em;
     }
 
+
     .required {
         padding-left: 20px;
     }
 
+
     .required p {
         margin: 0;
     }
+
+
 
 
     .terms {
@@ -578,14 +721,18 @@ button {
         padding: 10px 20px 10px 20px;
     }
 
+
     .submit p {
         font-size: 0.6em;
     }
+
+
 
 
     .submit-div {
         grid-column: 1 / 3;
         padding: 0 20px;
     }
+
 
 }

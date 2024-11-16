@@ -517,12 +517,19 @@ button {
         padding: 10px 20px;
     }
 
-    .small {
+    input[name="firstNameSmall"],
+    input[name="lastNamesmall"],
+    input[name="usernameSmall"],
+    input[name="pwSmall"],
+    input[name="mailSmall"],
+    input[name="postalSmall"],
+    input[name="citySmall"],
+    input[name="countrySmall"] {
         display: none;
     }
 
     .large {
-        display: inline-block;
+        display: block;
     }
 
     input {

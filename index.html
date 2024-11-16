@@ -56,38 +56,35 @@
                 <form action="http://httpbin.org/anything" method="POST">
                     <div class="all">
                         <div class="personalInfo">
-
                             <label class="mainLabels">
                                 <span>First Name*</span>
-                                <input type="text" name="firstName" class="large" required placeholder="First Name" />
-                                <input type="text" name="firstNameSmall" class="small" required
-                                    placeholder="First Name*" />
+                                <input type="text" name="info" class="large" required placeholder="First Name" />
+                                <input type="text" name="info" class="small" required placeholder="First Name*" />
                                 <span class="error">Invalid input</span>
                             </label>
 
                             <label class="mainLabels">
                                 <span>Last Name*</span>
-                                <input type="text" name="lastName" class="large" required placeholder="Last Name" />
-                                <input type="text" name="lastNameSall" class="small" required
-                                    placeholder="Last Name*" />
+                                <input type="text" name="info" class="large" required placeholder="Last Name" />
+                                <input type="text" name="info" class="small" required placeholder="Last Name*" />
                                 <span class="error">Invalid input</span>
                             </label>
 
                             <label class="mainLabels">
                                 <span>Username*</span>
-                                <input type="text" name="username" minlength="3" class="large" required
+                                <input type="text" name="info" minlength="3" class="large" required
                                     placeholder="Username" />
-                                <input type="text" name="usernameSmall" minlength="3" class="small" required
+                                <input type="text" name="info" minlength="3" class="small" required
                                     placeholder="Username*" />
                                 <span class="error">Invalid input. Minimum of 3 character.</span>
                             </label>
 
                             <label class="mainLabels">
                                 <span>Password*</span>
-                                <input type="password" name="pw" class="large"
+                                <input type="password" name="info" class="large"
                                     pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}$" required
                                     placeholder="Password" minlength="8" autocomplete="new-password" />
-                                <input type="password" name="pwSmall" class="small"
+                                <input type="password" name="info" class="small"
                                     pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}$" required
                                     placeholder="Password*" minlength="8" autocomplete="new-password" />
                                 <span class="error">
@@ -101,31 +98,31 @@
 
                             <label class="mainLabels">
                                 <span>E-mail*</span>
-                                <input type="email" name="mail" class="large" required
+                                <input type="email" name="info" class="large" required
                                     placeholder="email@example.com" />
-                                <input type="email" name="mailSmall" class="small" required
+                                <input type="email" name="info" class="small" required
                                     placeholder="email@example.com*" />
                                 <span class="error">Invalid input</span>
                             </label>
 
                             <label class="mainLabels">
                                 <span>Postal Code*</span>
-                                <input type="number" name="postal" class="large" required placeholder="123 45" />
-                                <input type="number" name="postalSmall" class="small" required placeholder="123 45*" />
+                                <input type="number" name="info" class="large" required placeholder="123 45" />
+                                <input type="number" name="info" class="small" required placeholder="123 45*" />
                                 <span class="error">Needs 5 numbers</span>
                             </label>
 
                             <label class="mainLabels">
                                 <span>City*</span>
-                                <input type="text" name="city" class="large" required placeholder="Stockholm" />
-                                <input type="text" name="citySmall" class="small" required placeholder="Stockholm*" />
+                                <input type="text" name="info" class="large" required placeholder="Stockholm" />
+                                <input type="text" name="info" class="small" required placeholder="Stockholm*" />
                                 <span class="error">Invalid input</span>
                             </label>
 
                             <label class="mainLabels">
                                 <span>Country*</span>
-                                <input type="text" name="country" class="large" required placeholder="Sverige" />
-                                <input type="text" name="countrySmall" class="small" required placeholder="Sverige*" />
+                                <input type="text" name="info" class="large" required placeholder="Sverige" />
+                                <input type="text" name="info" class="small" required placeholder="Sverige*" />
                                 <span class="error">Invalid input</span>
                             </label>
 
@@ -137,8 +134,8 @@
                         <div class="radio-choice">
                             <p>Your suggested content on signup will be chosen based on your previous experience.
                             </p>
-                            <h3>Previous experience: *</h3>
 
+                            <h3>Previous experience: *</h3>
                             <div class="choice">
                                 <label name="level">
                                     <input type="radio" name="experience" value="beginner" />
@@ -160,30 +157,33 @@
                                 </label>
                             </div>
 
+
+
+
                         </div>
 
                         <div class="required">
                             <p>* Indicates required field</p>
                         </div>
-
                         <div class="terms">
                             <label name="termsName">
-                                <input type="checkbox" name="agree" value="agrees to terms" required />
+                                <input type="checkbox" name="agree" value="agrees to terms" />
                                 <a href="#">
                                     Terms and Conditions*
                                 </a>
                             </label>
                         </div>
 
-                    </div>
-                    <div class="submit">
-                        <button type="submit">
-                            Sign up
-                        </button>
-                        <p class="login">Already have an account?
-                            <a href="#">Login
-                            </a>
-                        </p>
+
+                        <div class="submit">
+                            <button type="submit">
+                                Sign up
+                            </button>
+                            <p class="login">Already have an account?
+                                <a href="#">Login
+                                </a>
+                            </p>
+                        </div>
                     </div>
                 </form>
             </fieldset>

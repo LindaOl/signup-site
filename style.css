@@ -430,6 +430,7 @@ button {
 
     fieldset {
         max-width: 800px;
+        grid-template-columns: repeat(2, 2fr);
     }
 
 
@@ -502,6 +503,7 @@ button {
 
     fieldset {
         max-width: 800px;
+        grid-template-columns: repeat(2, 2fr);
     }
 
 
@@ -574,7 +576,7 @@ button {
     }
 
 
-    .submit {
+    .submit-div {
         grid-column: 1 / 3;
         padding: 0 20px;
     }

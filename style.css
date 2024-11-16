@@ -203,21 +203,8 @@ input {
     display: none;
 }
 
-input:focus {
-    border: 2px solid var(--button);
-    outline: var(--button);
-}
-
-input:required:invalid:not(:focus):not(:placeholder-shown) {
-    border: 2px solid var(--color-invalid);
-}
-
-input:required:invalid:not(:focus):not(:placeholder-shown)~.error {
-    display: flex;
-}
-
 .error {
-    display: hidden;
+    display: none;
     padding-left: 50px;
     text-wrap: none;
     width: 100%;
@@ -241,6 +228,18 @@ input:required:invalid:not(:focus):not(:placeholder-shown)~.error {
     justify-content: flex-end;
 }
 
+input:focus {
+    border: 2px solid var(--button);
+    outline: var(--button);
+}
+
+input:required:invalid:not(:focus):not(:placeholder-shown) {
+    border: 2px solid var(--color-invalid);
+}
+
+input:required:invalid:not(:focus):not(:placeholder-shown)~.error {
+    display: flex;
+}
 
 input::placeholder {
     text-transform: uppercase;
@@ -406,7 +405,6 @@ button {
 
 @media screen and (min-width: 628px) and (max-width: 1023px) {
 
-
     .hero-text {
         top: 45%;
     }
@@ -540,7 +538,6 @@ button {
 
     span {
         display: inline-block;
-
     }
 
 

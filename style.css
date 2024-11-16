@@ -203,31 +203,6 @@ input {
     display: none;
 }
 
-.error {
-    display: none;
-    padding-left: 50px;
-    text-wrap: none;
-    width: 100%;
-    font-size: 0.5em;
-    color: var(--color-invalid);
-    justify-content: flex-end;
-    align-items: flex-end;
-    flex-direction: column;
-    text-align: left;
-}
-
-.error ul {
-    padding-bottom: 5px;
-    margin: 0;
-}
-
-.error li {
-    margin: 0;
-    padding: 0;
-    text-align: left;
-    justify-content: flex-end;
-}
-
 input:focus {
     border: 2px solid var(--button);
     outline: var(--button);

@@ -576,7 +576,7 @@ button {
     }
 
 
-    .submit-div {
+    .submit {
         grid-column: 1 / 3;
         padding: 0 20px;
     }

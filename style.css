@@ -8,14 +8,10 @@
 }
 
 
-
-
 * {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
-
-
 
 
 body {
@@ -30,12 +26,6 @@ body {
 }
 
 
-
-
-
-
-
-
 /*header hero-banner*/
 header {
     grid-column: 1 / 2;
@@ -48,12 +38,6 @@ header {
 }
 
 
-
-
-
-
-
-
 header video {
     width: 100%;
     height: 100%;
@@ -64,21 +48,9 @@ header video {
 }
 
 
-
-
-
-
-
-
 .hero {
     width: 100%;
 }
-
-
-
-
-
-
 
 
 .hero-text {
@@ -95,12 +67,6 @@ header video {
 }
 
 
-
-
-
-
-
-
 .hero-text img {
     width: 15%;
     max-width: 65px;
@@ -109,12 +75,6 @@ header video {
     padding-bottom: 0;
     flex-grow: 1;
 }
-
-
-
-
-
-
 
 
 .hero-text h1 {
@@ -128,11 +88,7 @@ header video {
     margin: 0 auto 0 auto;
     flex-shrink: 1;
     z-index: 2;
-
-
 }
-
-
 
 
 .hero-text h2 {
@@ -147,8 +103,6 @@ header video {
 }
 
 
-
-
 /*Content*/
 main {
     grid-column: 1 / 2;
@@ -158,14 +112,10 @@ main {
 }
 
 
-
-
 .all {
     padding: 0;
     margin: 0;
 }
-
-
 
 
 .formContent {
@@ -180,15 +130,11 @@ main {
 }
 
 
-
-
 h2 {
     font-size: 1.3em;
     margin-bottom: 15px;
     padding-left: 10px;
 }
-
-
 
 
 fieldset {
@@ -202,8 +148,6 @@ fieldset {
 }
 
 
-
-
 form {
     width: 100%;
     padding: 10px 20px;
@@ -211,14 +155,11 @@ form {
 }
 
 
-
-
 .personalInfo {
     margin: 0;
     padding: 0 20px;
     width: 100%;
 }
-
 
 
 /*form labels*/
@@ -230,6 +171,7 @@ span {
     color: black;
     text-align: right;
 }
+
 
 input {
     width: 95%;
@@ -244,6 +186,7 @@ input {
     outline: none;
     align-content: center;
 }
+
 
 .small {
     width: auto;
@@ -296,8 +239,6 @@ input:required:invalid:not(:focus):not(:placeholder-shown)~.error {
 }
 
 
-
-
 input::placeholder {
     text-transform: uppercase;
     color: var(--inputPlaceholder);
@@ -306,8 +247,6 @@ input::placeholder {
     align-content: center;
     padding-left: 10px;
 }
-
-
 
 
 ::-webkit-input-placeholder {
@@ -350,8 +289,6 @@ input::placeholder {
 }
 
 
-
-
 /*Radio buttons*/
 .radio-choice {
     font-size: 0.6em;
@@ -360,21 +297,15 @@ input::placeholder {
 }
 
 
-
-
 .radio-choice p {
     padding: 20px 0 5px 0;
 }
-
-
 
 
 label[name="level"] {
     width: 20%;
     height: 100%;
 }
-
-
 
 
 input[type="radio"] {
@@ -391,13 +322,9 @@ input[type="radio"] {
 }
 
 
-
-
 input[type="radio"]:focus {
     background-color: var(--button);
 }
-
-
 
 
 input[type="radio"]:hover,
@@ -406,14 +333,10 @@ input[type="checkbox"]:hover {
 }
 
 
-
-
 .required {
     margin: 0;
     padding: 0;
     display: block;
-
-
 }
 
 
@@ -435,15 +358,11 @@ input[type="checkbox"]:hover {
 }
 
 
-
-
 label[name="termsName"] a {
     font-size: 0.7em;
     color: black;
     text-decoration: none;
 }
-
-
 
 
 label[name="termsName"] a:hover {
@@ -452,8 +371,6 @@ label[name="termsName"] a:hover {
     text-decoration: underline;
     cursor: pointer;
 }
-
-
 
 
 input[type="checkbox"] {
@@ -476,13 +393,9 @@ button {
 }
 
 
-
-
 .login {
     font-size: 0.5em;
 }
-
-
 
 
 .login a {
@@ -492,21 +405,11 @@ button {
 
 
 
-
-
-
-
-
 @media screen and (min-width: 628px) and (max-width: 1023px) {
-
-
-
 
     .hero-text {
         top: 45%;
     }
-
-
 
 
     .hero-text h1 {
@@ -515,20 +418,14 @@ button {
     }
 
 
-
-
     .hero-text h2 {
         font-size: 1em;
     }
 
 
-
-
     header {
         height: 60vh;
     }
-
-
 
 
     fieldset {
@@ -537,14 +434,10 @@ button {
     }
 
 
-
-
     .all {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
-
-
 
 
     .personalInfo {
@@ -558,8 +451,6 @@ button {
         grid-column: 2 / 3;
         padding: 10px 20px;
     }
-
-
 
 
     .radio-choice p {
@@ -573,14 +464,10 @@ button {
     }
 
 
-
-
     .terms {
         grid-column: 1 / 3;
         padding: 10px 20px 10px 20px;
     }
-
-
 
 
     .submit {
@@ -588,22 +475,14 @@ button {
         padding: 0 20px;
     }
 
-
 }
-
-
 
 
 @media screen and (min-width: 1024px) {
 
-
-
-
     .hero-text {
         top: 38%;
     }
-
-
 
 
     .hero-text h1 {
@@ -612,13 +491,9 @@ button {
     }
 
 
-
-
     .hero-text h2 {
         font-size: 1em;
     }
-
-
 
 
     header {
@@ -627,22 +502,16 @@ button {
     }
 
 
-
-
     fieldset {
         max-width: 800px;
         grid-template-columns: repeat(2, 2fr);
     }
 
 
-
-
     .all {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
-
-
 
 
     .personalInfo {
@@ -656,12 +525,11 @@ button {
         display: none;
     }
 
+
     input {
         width: 70%;
         display: inline-block;
     }
-
-
 
 
     label {
@@ -669,15 +537,9 @@ button {
     }
 
 
-
-
     span {
         display: inline-block;
-
-
     }
-
-
 
 
     /*radio buttons*/
@@ -685,8 +547,6 @@ button {
         grid-column: 2 / 3;
         padding: 10px 20px;
     }
-
-
 
 
     .radio-choice p {
@@ -706,8 +566,6 @@ button {
     }
 
 
-
-
     .terms {
         grid-column: 1 / 3;
         padding: 10px 20px 10px 20px;
@@ -719,12 +577,8 @@ button {
     }
 
 
-
-
     .submit-div {
         grid-column: 1 / 3;
         padding: 0 20px;
     }
-
-
 }

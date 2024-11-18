@@ -221,7 +221,7 @@ form {
 
 
 
-
+/*form labels*/
 span {
     width: 28%;
     flex-shrink: 1;
@@ -231,13 +231,10 @@ span {
     text-align: right;
 }
 
-
-
-
 input {
-    width: 100%;
+    width: 95%;
     flex-shrink: 1;
-    display: block;
+    display: inline-block;
     border-radius: 30px;
     background-color: var(--inputBgColor);
     padding: 5px 10px;
@@ -248,9 +245,10 @@ input {
     align-content: center;
 }
 
-
-.large {
-    display: none;
+.small {
+    width: auto;
+    flex-shrink: 1;
+    display: inline-flex;
 }
 
 
@@ -657,12 +655,6 @@ button {
     .small {
         display: none;
     }
-
-
-    .large {
-        display: inline-block;
-    }
-
 
     input {
         width: 70%;

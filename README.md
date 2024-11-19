@@ -12,10 +12,12 @@
 - Had some issues with the form not sending every time, but got it sorted
 - Trial and error to make things work untill it mostly did
 - Did notice how my radio buttons got unchecked when the checkbox was used. Trying to find out why.
+- Tools: Visual Studios, ChatGPT to ask questions when about why thing weren't working or to explain concepts. Google to find answers when needed. Trying to make the different screen types look slightly different to practice making things work.
+- Techniques: Planning and finding inspiration. Making a basic layout to add the different main elements. Start styling, and going for "Mobile first", then adapt to tablet and desktop. Make adjustments, make changes and deal with issues till I'm done.
 
 ## If I had time, what would be next?
 - Try out new layouts
-- Try to make the hero image be on one side and the form on the other on desktop screens, but that wasn't the assignment. I'm thinkig styling and positioning would have other types of challenges to deal with then.
+- Try to make the hero image be on one side and the form on the other on desktop screens, but that wasn't the assignment. I'm thinking styling and positioning would have other types of challenges to deal with then.
 
 ## View it live
 [Website](https://business-signup.netlify.app/)

@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
-
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,11 +20,7 @@
 
 
 
-
 <body>
-
-
-
 
     <header>
         <div class="hero">
@@ -47,12 +40,22 @@
 
     <main>
         <div class="formContent">
-            <h2>Sign up and join the community</h2>
+            <h2>Sign up and join our community</h2>
 
             <fieldset>
                 <form action="http://httpbin.org/anything" method="POST">
                     <div class="all">
                         <div class="personalInfo">
+
+                            <label class="mainLabels" name="user">
+                                <span>Username*</span>
+                                <input type="text" name="username" minlength="3" class="large" required
+                                    placeholder="Username" />
+                                <span class="small">*</span>
+                                <!--error msg-->
+                                <span class="error">Invalid input. Minimum of 3 character.</span>
+                            </label>
+
                             <label class="mainLabels">
                                 <span>First Name*</span>
                                 <input type="text" name="firstName" class="large" required placeholder="First Name" />
@@ -67,15 +70,6 @@
                                 <span class="small">*</span>
                                 <!--error msg-->
                                 <span class="error">Invalid input</span>
-                            </label>
-
-                            <label class="mainLabels">
-                                <span>Username*</span>
-                                <input type="text" name="username" minlength="3" class="large" required
-                                    placeholder="Username" />
-                                <span class="small">*</span>
-                                <!--error msg-->
-                                <span class="error">Invalid input. Minimum of 3 character.</span>
                             </label>
 
                             <label class="mainLabels">
@@ -96,10 +90,10 @@
 
                             <!--Going to need code, like javascript, to confirm matching password-->
                             <label class="mainLabels">
-                                <span>Repeat password*</span>
+                                <span>Confirm Password*</span>
                                 <input type="password" name="pw2" class="large"
                                     pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}$" required
-                                    placeholder="Repeat password" minlength="8" autocomplete="new-password" />
+                                    placeholder="Confirm password" minlength="8" autocomplete="new-password" />
                                 <span class="small">*</span>
                                 <!--error msg-->
                                 <span class="error">
@@ -121,25 +115,23 @@
                             </label>
 
                             <label class="mainLabels">
-                                <span>Postal Code*</span>
-                                <input type="number" name="postal" class="large" required placeholder="123 45" />
-                                <span class="small">*</span>
-                                <!--error msg-->
-                                <span class="error">Needs 5 numbers</span>
-                            </label>
-
-                            <label class="mainLabels">
-                                <span>City*</span>
-                                <input type="text" name="city" class="large" required placeholder="Stockholm" />
-                                <span class="small">*</span>
+                                <span>Adresse</span>
+                                <input type="text" name="adresse" class="large" placeholder="Adresse" />
                                 <!--error msg-->
                                 <span class="error">Invalid input</span>
                             </label>
 
                             <label class="mainLabels">
-                                <span>Country*</span>
-                                <input type="text" name="country" class="large" required placeholder="Sverige" />
-                                <span class="small">*</span>
+                                <span>Postal Code</span>
+                                <input type="text" name="portal" class="large" pattern="[0-9]{5}"
+                                    placeholder=" 123 45" />
+                                <!--error msg-->
+                                <span class="error">Needs 5 numbers</span>
+                            </label>
+
+                            <label class="mainLabels">
+                                <span>City</span>
+                                <input type="text" name="city" class="large" placeholder="Stockholm" />
                                 <!--error msg-->
                                 <span class="error">Invalid input</span>
                             </label>
@@ -149,56 +141,59 @@
 
                         <!--Radio buttons - experience level-->
 
-                        <div class="radio-choice">
-                            <p>Your suggested content on signup will be chosen based on your previous experience.
-                            </p>
+                        <div class="bottom-form">
+                            <div class="radio-choice">
+                                <p>Your suggested content on signup will be chosen based on your previous experience.
+                                </p>
 
-                            <h3>Previous experience: *</h3>
-                            <div class="choice">
-                                <label name="level">
-                                    <input type="radio" name="experience" value="beginner" />
-                                    Beginner
-                                </label>
+                                <h3>Previous experience: *</h3>
+                                <div class="choice">
+                                    <label name="level">
+                                        <input type="radio" name="experience" value="beginner" />
+                                        Beginner
+                                    </label>
+                                </div>
+
+                                <div class="choice">
+                                    <label name="level">
+                                        <input type="radio" name="experience" value="intermediate" />
+                                        Intermediate
+                                    </label>
+                                </div>
+
+                                <div class="choice">
+                                    <label name="level">
+                                        <input type="radio" name="experience" value="advanced" />
+                                        Advanced
+                                    </label>
+                                </div>
                             </div>
 
-                            <div class="choice">
-                                <label name="level">
-                                    <input type="radio" name="experience" value="intermediate" />
-                                    Intermediate
-                                </label>
+
+                            <div class="termsAndSignup">
+                                <div class="required">
+                                    <p>* Indicates required field</p>
+                                </div>
+                                <div class="terms">
+                                    <label name="termsName">
+                                        <input type="checkbox" name="agree" value="agrees to terms" />
+                                        <a href="#">
+                                            Terms and Conditions*
+                                        </a>
+                                    </label>
+                                </div>
+
+
+                                <div class="submit-div">
+                                    <button type="submit">
+                                        Sign up
+                                    </button>
+                                    <p class="login">Already have an account?
+                                        <a href="#">Login
+                                        </a>
+                                    </p>
+                                </div>
                             </div>
-
-                            <div class="choice">
-                                <label name="level">
-                                    <input type="radio" name="experience" value="advanced" />
-                                    Advanced
-                                </label>
-                            </div>
-
-                        </div>
-
-
-                        <div class="required">
-                            <p>* Indicates required field</p>
-                        </div>
-                        <div class="terms">
-                            <label name="termsName">
-                                <input type="checkbox" name="agree" value="agrees to terms" />
-                                <a href="#">
-                                    Terms and Conditions*
-                                </a>
-                            </label>
-                        </div>
-
-
-                        <div class="submit-div">
-                            <button type="submit">
-                                Sign up
-                            </button>
-                            <p class="login">Already have an account?
-                                <a href="#">Login
-                                </a>
-                            </p>
                         </div>
                     </div>
                 </form>

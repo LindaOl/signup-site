@@ -218,6 +218,7 @@ input[type="email"]:required:invalid:not(:focus):not(:placeholder-shown)~.error 
 .error {
     display: none;
     padding-left: 50px;
+    padding-right: 5%;
     text-wrap: none;
     width: 100%;
     font-size: 0.5em;

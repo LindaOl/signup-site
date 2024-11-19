@@ -3,6 +3,7 @@
 - Should also be responsive to certain devices/screen sizes
 
 ## Appproach
+- First off I missed the part to fork a respo, so I made my own. On my github there is a public respo with the one I actually worked in. Will fork one, and upload the same there, to make it connected to the original respo.
 - Browsed to find a video I could use and to inspire how the form could look and what elements to have.
 - Began with the basic html for a header and the form
 - Started styling
